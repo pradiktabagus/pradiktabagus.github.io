@@ -1,17 +1,17 @@
 {
-  "name": "react-boilerplate",
-  "version": "4.0.0",
+  "name": "sabana",
+  "version": "1.0.0",
   "homepage": "https://pradiktabagus.github.io/",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "blog",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/pradiktabagus/pradiktabagus.github.io.git"
   },
   "engines": {
     "npm": ">=5",
     "node": ">=8.15.1"
   },
-  "author": "Max Stoiber",
+  "author": "pradiktabagus",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -164,5 +164,15 @@
     "webpack-hot-middleware": "2.24.3",
     "webpack-pwa-manifest": "4.0.0",
     "whatwg-fetch": "3.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/pradiktabagus/pradiktabagus.github.io/issues"
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "blog"
+  ]
 }
