@@ -5,13 +5,22 @@
  *
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React, { useState, useEffect } from 'react';
+import moment from 'moment';
+import 'al-styles/layouts/home.scss';
 export default function HomePage() {
+  const [time, setTime] = useState(
+    moment().format('dddd, MMM Do YY, h:mm:ss a'),
+  );
+  useEffect(() => {
+    setInterval(() => {
+      setTime(moment().format('dddd, MMM Do YY, h:mm:ss a'));
+    }, 1000);
+  });
+
   return (
-    <h1 className="app">
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <div className="container">
+      <h1 className="app">{time}</h1>
+    </div>
   );
 }
