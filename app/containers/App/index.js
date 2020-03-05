@@ -11,7 +11,7 @@ import React from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
 
 import { HomePage, NotFoundPage, Auth } from '..';
-
+import Search from '../../components/search';
 import GlobalStyle from '../../global-styles';
 
 export default function App() {
@@ -19,6 +19,7 @@ export default function App() {
     <div>
       <div className="header-fixed">
         <nav className="navbar">
+          <Search placeholder="Search" />
           <NavLink to="/auth" className="login">
             Login
           </NavLink>

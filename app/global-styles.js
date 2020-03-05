@@ -51,7 +51,9 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     padding: 3px 2%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center
   }
 
   .login:hover {
