@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <div className="header-fixed">
-        <nav className="navbar">
+        <nav className="navbar-fixed">
           <Search placeholder="Search" />
           <NavLink to="/auth" className="login">
             Login

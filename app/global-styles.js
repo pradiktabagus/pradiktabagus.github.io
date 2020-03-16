@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     align-item: center;
   }
 
-  .navbar {
+  .navbar-fixed {
     max-width: 100%;
     width: 1250px;
     margin: auto;

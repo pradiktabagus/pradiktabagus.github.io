@@ -1,20 +1,49 @@
-.container{
+.container {
     height: 100%;
     min-height: calc(100vh - 46px);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 4rem;
+    display: flex;
+    padding: 15px;
 }
-.card{
-    min-height: 400px;;
+.card {
+    min-height: 400px;
     height: 100%;
-    min-width: 700px;
     padding: 10px 12px;
     overflow: hidden;
     background: #f3f3f3;
     display: block;
     color: black;
     border-radius: 5px;
+    margin: 0 auto;
+    width: 600px;
     box-shadow: 1px 1px 10px 1px #c2c2c2;
+}
+#tabs-with-content .tabs:not(:last-child) {
+    margin-bottom: 0;
+}
+
+#tabs-with-content .tab-content {
+    padding: 1rem;
+    display: none;
+}
+
+#tabs-with-content .tab-content.is-active {
+    display: block;
+}
+.btn-auth {
+    color: white;
+    width: 80%;
+    background-color: black;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(0.5em - 1px) 1em;
+    text-align: center;
+    white-space: nowrap;
+}
+.container-auth {
+    text-align: center;
 }
