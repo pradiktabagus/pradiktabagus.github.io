@@ -1,23 +1,32 @@
-/**
- *
- * App.js
- *
- * This component is the skeleton around the actual pages, and should only
- * contain code that should be seen on all pages. (e.g. navigation bar)
- *
- */
-
 import React from 'react';
-import { Switch, Route, NavLink } from 'react-router-dom';
-
-import { HomePage, NotFoundPage, Auth } from '..';
-import Search from '../../components/search';
-import GlobalStyle from '../../global-styles';
-
+import Sidebar from 'al-comps/sidebar';
+import 'al-styles/base.scss';
 export default function App() {
   return (
-    <div>
-      <div className="header-fixed">
+    <div className="root">
+      <div className="section-app">
+        <Sidebar />
+        <div className="content">
+          <div className="inner-body">
+            <div className="section-convertation">
+              <div />
+              <div />
+            </div>
+            <div className="section-footer">
+              <div className="section-quetion">
+                <textarea
+                  className="quetion-area"
+                  placeholder="Ask anything about me...!"
+                />
+                <div className="btn-area">
+                  <button className="btn-send">send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="header-fixed">
         <nav className="navbar-fixed">
           <Search placeholder="Search" />
           <NavLink to="/auth" className="login">
@@ -32,7 +41,7 @@ export default function App() {
           <Route component={NotFoundPage} />
         </Switch>
       </div>
-      <GlobalStyle />
+      <GlobalStyle /> */}
     </div>
   );
 }

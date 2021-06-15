@@ -1,0 +1,107 @@
+:root {
+    --color-1 : #f5f5f5;
+    --color-2 : #ffffff;
+    --color-3 : rgba(149, 157, 165, 0.2);
+    --color-4 : rgb(226, 224, 212);
+    --color-5 : #F0EBCC;
+    --color-6 : #3D84B8;
+    --color-7 : #344FA1;
+    --color-8 : #3d84b824;
+    --padd-1 : 1.5em;
+
+    --width-section : 1300px;
+    --width-sidebar : 300px;
+    --width-content : calc(100% - var(--width-sidebar));
+}
+.root {
+    background-color: var(--color-1);
+    height: 100vh;
+    padding: var(--padd-1);
+}
+.section-app {
+    max-width: var(--width-section);
+    background-color: var(--color-2);
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid var(--color-4);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: var(--color-3) 0px 8px 24px;
+    display: flex;
+}
+.content {
+    width: var(--width-content);
+    padding: var(--padd-1);
+}
+.inner-body {
+    position: relative;
+    background-color: var(--color-8);
+    height: 100%;
+    border-radius: 13px;
+    padding: var(--padd-1);
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+.section-footer {
+    height: auto;
+    width: calc(100% - var(--padd-1) - var(--padd-1));
+    position: absolute;
+    bottom: 10px;
+}
+.section-quetion {
+    position: relative;
+    > .quetion-area {
+        box-sizing: border-box;
+        padding: 20px 100px 20px 20px;
+        border: 1px solid var(--color-4);
+        width: 100%;
+        min-height: 40px;
+        max-height: 200px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+    > .quetion-area:focus, .quetion-area:focus-visible {
+        border: 1px solid var(--color-4);
+        outline: 0;
+    }
+    > .btn-area {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        right: 0;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.btn-send {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    background-color: var(--color-6);
+    color: var(--color-1);
+    border-radius: 100%;
+    border: none;
+    padding: 10px;
+    transition: 0.5s ease-in;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+}
+.btn-send:hover {
+    background-color: var(--color-7);
+}

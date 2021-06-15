@@ -127,6 +127,7 @@ module.exports = options => ({
     mainFields: ['browser', 'jsnext:main', 'main'],
     alias: {
       'al-styles': path.resolve(__dirname, '../../app/styles/'),
+      'al-comps': path.resolve(__dirname, '../../app/components/'),
     },
   },
   devtool: options.devtool,
