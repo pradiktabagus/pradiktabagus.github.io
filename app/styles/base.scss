@@ -1,28 +1,30 @@
 :root {
     --color-1 : #f5f5f5;
-    --color-2 : #ffffff;
+    --color-2 : #FDFDFF;
     --color-3 : rgba(149, 157, 165, 0.2);
     --color-4 : rgb(226, 224, 212);
-    --color-5 : #F0EBCC;
+    --color-5 : #8CBBF1;
     --color-6 : #3D84B8;
     --color-7 : #344FA1;
     --color-8 : #3d84b824;
+    --color-9 : #777777;
     --padd-1 : 1.5em;
 
     --width-section : 1300px;
-    --width-sidebar : 300px;
+    --width-sidebar : 400px;
     --width-content : calc(100% - var(--width-sidebar));
 }
 .root {
     background-color: var(--color-1);
     height: 100vh;
     padding: var(--padd-1);
+    position: relative;
 }
 .section-app {
     max-width: var(--width-section);
     background-color: var(--color-2);
+    height: 90%;
     margin: 0 auto;
-    height: 100%;
     border: 1px solid var(--color-4);
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -41,7 +43,6 @@
     background-color: var(--color-8);
     height: 100%;
     border-radius: 13px;
-    padding: var(--padd-1);
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
@@ -49,19 +50,23 @@
 }
 .section-footer {
     height: auto;
-    width: calc(100% - var(--padd-1) - var(--padd-1));
+    width: calc(100%);
     position: absolute;
     bottom: 10px;
+    padding: 0 25px;
 }
 .section-quetion {
     position: relative;
     > .quetion-area {
         box-sizing: border-box;
-        padding: 20px 100px 20px 20px;
+        padding: 15px 100px 15px 20px;
         border: 1px solid var(--color-4);
         width: 100%;
         min-height: 40px;
         max-height: 200px;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #000000;
         border-radius: 50px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -104,4 +109,101 @@
 }
 .btn-send:hover {
     background-color: var(--color-7);
+}
+.section-convertation {
+    position: relative;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.chat-box {
+    margin: 5px 0;
+    min-width: 50px;
+    width: fit-content;
+    padding: 8px 12px;
+    background: var(--color-1);
+    box-shadow: var(--color-3) 0px 8px 24px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    > p {
+        font-size: 11pt;
+        margin: 0;
+    }
+}
+
+
+
+
+.middle {
+  position: absolute;
+  width: 100%;
+  opacity: 0.85;
+  height: 80%;
+}
+
+.incoming {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  .bubble {
+    background: var( --color-2);
+  }
+}
+
+.bubble {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 0.7em;
+  padding: 10px 10px 10px 12px;
+  border-radius: 20px;
+}
+
+.lower {
+  margin-top: 45px;
+}
+
+.outgoing {
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  top: 15%;
+  width: 50%;
+  height: 100%;
+  .bubble {
+    background: var(--color-5);
+    float: right;
+  }
+}
+.header-chat {
+    display: flex;
+    padding: 15px;
+    background-color: var(--color-5);
+    opacity: 70%;
+    border-radius: 13px 13px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-border-radius: 13px 13px 0 0;
+    -moz-border-radius: 13px 13px 0 0;
+    -ms-border-radius: 13px 13px 0 0;
+    -o-border-radius: 13px 13px 0 0;
+}
+.avatar {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: var(--color-1);
+    box-shadow: var(--color-3) 0px 8px 24px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }

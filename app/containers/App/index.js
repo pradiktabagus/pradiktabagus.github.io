@@ -8,9 +8,25 @@ export default function App() {
         <Sidebar />
         <div className="content">
           <div className="inner-body">
-            <div className="section-convertation">
-              <div />
-              <div />
+            <div className="section-convertation middle">
+              <div className="header-chat">
+                <div className="user-chat">
+                  <div className="avatar" />
+                </div>
+              </div>
+              <div className="incoming">
+                <div className="bubble">Hey, Father's Day is coming up..</div>
+                <div className="bubble">
+                  What are you getting.. Oh, oops sorry dude.
+                </div>
+              </div>
+              <div className="outgoing">
+                <div className="bubble lower">Nah, it's cool.</div>
+                <div className="bubble">
+                  Well you should get your Dad a cologne. Here smell it. Oh
+                  wait! ...
+                </div>
+              </div>
             </div>
             <div className="section-footer">
               <div className="section-quetion">
