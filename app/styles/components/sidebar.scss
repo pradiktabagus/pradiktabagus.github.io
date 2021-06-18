@@ -45,3 +45,43 @@
 .find-me {
     margin-top: 100px;
 }
+.social-media {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.items {
+    width: 100%;
+    a {
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: 45px 1fr;
+        align-items: center;
+    }
+    img {
+        height: 30px;
+        height: 30px;
+    }
+    h4 {
+        color: var(--color-4);
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        padding: 0;
+        height: var(--height-sidebar);
+    }
+    .find-me {
+        margin: 0;
+    }
+    .inner-sidebar {
+        border-radius: 0 0 13px 13px;
+        -webkit-border-radius: 0 0 13px 13px;
+        -moz-border-radius: 0 0 13px 13px;
+        -ms-border-radius: 0 0 13px 13px;
+        -o-border-radius: 0 0 13px 13px;
+}
+}
