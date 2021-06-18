@@ -93,6 +93,9 @@
         justify-content: center;
     }
 }
+.full-width {
+    width: 100%;
+}
 .btn-send {
     display: flex;
     align-items: center;
@@ -212,6 +215,76 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+}
+select {
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  
+    // Stack above custom arrow
+    z-index: 1;
+  
+    // Remove dropdown arrow in IE10 & IE11
+    // @link https://www.filamentgroup.com/lab/select-css.html
+    &::-ms-expand {
+      display: none;
+    }
+  
+    // Remove focus outline, will add on alternate element
+    outline: none;
+}
+.select {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    select,
+    &::after {
+      grid-area: select;
+    }
+  
+    min-width: 15ch;
+    max-width: 30ch;
+  
+    border: 2px solid var(--color-7);
+    border-radius: 0.25em;
+    padding: 0.1em 0.5em;
+    font-size: 1.1em;   
+    cursor: pointer;
+    line-height: 1.1;
+  
+    // Optional styles
+    // remove for transparency
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  
+    // Custom arrow
+    &:not(.select--multiple)::after {
+      content: "";
+      justify-self: end;
+      width: 0.8em;
+      height: 0.5em;
+      background-color: var(--color-9);
+      clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    }
 }
 @media (max-width: 480px) {
     .root {

@@ -3,6 +3,7 @@ import Sidebar from 'al-comps/sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKeyboard } from '@fortawesome/free-solid-svg-icons';
 import 'al-styles/base.scss';
+import { CDN } from './constants';
 export default function App(props) {
   const [state, setState] = useState({
     typing: null,
@@ -131,7 +132,9 @@ export default function App(props) {
             <div className="section-convertation middle">
               <div className="header-chat">
                 <div className="user-chat">
-                  <div className="avatar" />
+                  <div className="avatar">
+                    {/* <img src={`${CDN}photo-profile.jpg`} alt="Profile" /> */}
+                  </div>
                 </div>
               </div>
               {state.chat.map(ch => (

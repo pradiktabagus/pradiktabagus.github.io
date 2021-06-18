@@ -6,22 +6,29 @@ import Mail from '../../images/envelope.svg';
 import Instagram from '../../images/instagram.svg';
 import Wattpad from '../../images/wattpad.svg';
 import 'al-styles/components/sidebar.scss';
+import { CDN } from '../../containers/App/constants';
 function index(props) {
   return (
     <div className="sidebar">
       <div className="inner-sidebar">
         <div className="profile">
-          <div className="photo-profile" />
+          <div className="photo-profile">
+            <img src={`${CDN}photo-profile.jpg`} alt="Profile" />
+          </div>
           <label>Rofiyanto Bagus P.</label>
         </div>
-        <select name="position" id="position" className="position">
-          <option key={1} value={1}>
-            Frontend Developer
-          </option>
-          <option key={2} value={2}>
-            Android Developer
-          </option>
-        </select>
+        <div className="full-width">
+          <div className="select">
+            <select name="position" id="position" className="position">
+              <option key={1} value={1}>
+                Frontend Developer
+              </option>
+              <option key={2} value={2}>
+                Android Developer
+              </option>
+            </select>
+          </div>
+        </div>
         <div className="find-me">
           <ul className="social-media">
             <li className="items">
